@@ -427,7 +427,7 @@ def log_run_summary(**context):
 default_args  ={
     "owner" :"airflow",
     "retries" : 3,
-    "retry_delays" : timedelta(seconds= 15),
+    "retry_delay" : timedelta(seconds= 15),
     "email" : {ALERT_EMAIL},
     "email_on_failure" : True ,
     "email_on_retry" : True ,
